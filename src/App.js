@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 
 function App() {
-  console.log("merg conflict 3")
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [ws, setWs] = useState(null);
@@ -10,21 +9,13 @@ function App() {
   useEffect(() => {
     // Example client-side connection
     const userId = "u123";
-
     const clientId = "c456";
-
-
-
-
-
-    
 
     const socket = new WebSocket(
       `ws://localhost:4000?userId=${userId}&clientId=${clientId}&targetDomain=ws://localhost:4001`
     );
 
     socket.onopen = () => {
-      console.log("✅ Connected to X-server (proxy)");
       setMessages((prev) => [...prev, "Connected to server"]);
     };
 
