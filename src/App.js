@@ -3,7 +3,11 @@ import React, { useEffect, useState } from "react";
 
 function App() {
   
+<<<<<<< HEAD
   console.log("demo3")
+=======
+  console.log("demo")
+>>>>>>> parent of 224de3c (Reapply "Update console log message for debugging")
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [ws, setWs] = useState(null);
