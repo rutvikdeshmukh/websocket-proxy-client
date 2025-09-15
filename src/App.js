@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 function App() {
-  console.log("merg conflict 1")
+  console.log("merg conflict 2")
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [ws, setWs] = useState(null);
