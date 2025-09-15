@@ -9,7 +9,15 @@ function App() {
   useEffect(() => {
     // Example client-side connection
     const userId = "u123";
+
     const clientId = "c456";
+
+
+
+
+
+    
+
     const socket = new WebSocket(
       `ws://localhost:4000?userId=${userId}&clientId=${clientId}&targetDomain=ws://localhost:4001`
     );
