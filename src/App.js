@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 
 function App() {
+  
+  console.log("demo")
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [ws, setWs] = useState(null);
